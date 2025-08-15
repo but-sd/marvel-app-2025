@@ -1,4 +1,4 @@
-export default function CharactersList({ characters }) {
+export default function CharactersList({ characters = [] }) {
   return (
     <ul id="characters">
       {characters.map((character) => (
