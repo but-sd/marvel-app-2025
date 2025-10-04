@@ -38,6 +38,11 @@ li {
   border-bottom: 1px solid #ccc;
 }
 
+li a {
+    color: #333;
+    text-decoration: none;
+}
+
 /* Navigation */
 nav {
   background: #444;
@@ -74,4 +79,9 @@ footer {
   color: #fff;
   text-align: center;
   margin-top: auto;
+}
+
+li a {
+  color: #333;
+  text-decoration: none;
 }

@@ -1,8 +1,12 @@
+import { Link } from "react-router";
+
 export default function CharactersList({ characters = [] }) {
   return (
     <ul id="characters">
       {characters.map((character) => (
-        <li key={character.id}>{character.name}</li>
+        <Link to={`/characters/${character.id}`} key={character.id}>
+          <li>{character.name}</li>
+        </Link>
       ))}
     </ul>
   );
