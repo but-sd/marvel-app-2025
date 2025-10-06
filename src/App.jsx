@@ -1,15 +1,14 @@
 import './App.css'
-import CharactersList from './components/CharactersList';
-import NumberOfCharacters from './components/NumberOfCharacters';
-import characters from './data/characters.json';
+import { createBrowserRouter, RouterProvider } from "react-router";
+import routes from './routes';
+
+// router to navigate through the app
+const router = createBrowserRouter(routes);
 
 function App() {
   return (
     <>
-      <h1>Marvel Characters</h1>
-      <CharactersList characters={characters} />
-      <br/>
-      <NumberOfCharacters characters={characters} />
+      <RouterProvider router={router} />
     </>
   );
 }
